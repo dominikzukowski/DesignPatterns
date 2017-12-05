@@ -40,10 +40,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder\CourseBuilder.cs" />
-    <Compile Include="Builder\Course.cs" />
+    <Compile Include="Factory\SimpleFactory.cs" />
+    <Compile Include="LanguageSchool\Course.cs" />
     <Compile Include="Builder\EnglishCourseBuilder.cs" />
     <Compile Include="Builder\EsperantoCourseBuilder.cs" />
     <Compile Include="Builder\LanguageSchoolDirector.cs" />
+    <Compile Include="LanguageSchool\ICourseType.cs" />
+    <Compile Include="LanguageSchool\OnlineCourse.cs" />
+    <Compile Include="LanguageSchool\FullTimeCourse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
