@@ -40,6 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder\CourseBuilder.cs" />
+    <Compile Include="Factory\FullTimeCourseFactory.cs" />
+    <Compile Include="Factory\IFactoryMethod.cs" />
+    <Compile Include="Factory\OnlineCourseFactory.cs" />
     <Compile Include="Factory\SimpleFactory.cs" />
     <Compile Include="LanguageSchool\Course.cs" />
     <Compile Include="Builder\EnglishCourseBuilder.cs" />

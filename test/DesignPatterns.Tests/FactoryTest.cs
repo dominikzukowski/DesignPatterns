@@ -15,5 +15,14 @@ namespace DesignPatterns.Tests
             course.Type = SimpleFactory.CreateClassrom(CourseType.Online);
             Assert.IsInstanceOfType(course.Type, typeof(OnlineCourse));
         }
+
+        [TestMethod]
+        public void FactoryMethodTest()
+        {
+            Course course = new Course();
+            IFactoryMethod factory = new FullTimeCourseFactory();
+            course.Type = factory.CreateClassrom();
+            Assert.IsInstanceOfType(course.Type, typeof(FullTimeCourse));
+        }
     }
 }
