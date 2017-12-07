@@ -53,6 +53,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BuilderTest.cs" />
     <Compile Include="FactoryTest.cs" />
+    <Compile Include="ObserverTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\DesignPatterns\DesignPatterns.csproj">

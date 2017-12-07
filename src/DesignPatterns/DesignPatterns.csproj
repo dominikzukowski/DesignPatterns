@@ -49,8 +49,11 @@
     <Compile Include="Builder\EsperantoCourseBuilder.cs" />
     <Compile Include="Builder\LanguageSchoolDirector.cs" />
     <Compile Include="LanguageSchool\ICourseType.cs" />
+    <Compile Include="LanguageSchool\IStudent.cs" />
     <Compile Include="LanguageSchool\OnlineCourse.cs" />
     <Compile Include="LanguageSchool\FullTimeCourse.cs" />
+    <Compile Include="LanguageSchool\Student.cs" />
+    <Compile Include="LanguageSchool\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
