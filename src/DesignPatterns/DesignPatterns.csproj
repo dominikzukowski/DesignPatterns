@@ -40,6 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builder\CourseBuilder.cs" />
+    <Compile Include="Decorator\Course.cs" />
+    <Compile Include="Decorator\GroupCourseDecorator.cs" />
+    <Compile Include="Decorator\ICourse.cs" />
+    <Compile Include="Decorator\CourseDecorator.cs" />
     <Compile Include="Factory\CourseAbstractFactory.cs" />
     <Compile Include="Factory\FullTimeCourseAbstractFactory.cs" />
     <Compile Include="Factory\IAbstractFactory.cs" />
