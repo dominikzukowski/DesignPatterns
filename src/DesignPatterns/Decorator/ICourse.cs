@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Decorator
 {
-    public interface ICourse
+    public abstract class ICourse
     {
-        string GetDescription();
+        public string Description;
+        public abstract void BeginCourse();
+        public abstract string GetDescription();
     }
 }

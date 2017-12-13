@@ -8,7 +8,13 @@ namespace DesignPatterns.Decorator
 {
     public class Course : ICourse
     {
-        public string GetDescription()
+        public override void BeginCourse()
+        {
+            Description = "Language Course";
+        }
+
+
+        public override string GetDescription()
         {
             return "Language Course";
         }

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Decorator
 {
-    public class GroupCourseDecorator : CourseDecorator
+    public class OnlineCourseDecorator : CourseDecorator
     {
         ICourse course;
-        public GroupCourseDecorator(ICourse course) 
+        public OnlineCourseDecorator(ICourse course) 
             : base(course)
         {
             this.course = course;
@@ -18,12 +18,12 @@ namespace DesignPatterns.Decorator
         public override void BeginCourse()
         {
             course.BeginCourse();
-            Description = "Group " + course.Description;
+            Description = "Online " + course.Description;
         }
 
         public override string GetDescription()
         {
-            return "Group " + course.GetDescription();
+            return "Online " + course.GetDescription();
         }
     }
 }

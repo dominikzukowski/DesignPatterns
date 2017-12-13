@@ -24,5 +24,16 @@ namespace DesignPatterns.Tests
             var description = course.GetDescription();
             Assert.AreEqual("Group Language Course", description);
         }
+
+        [TestMethod]
+        public void PropertyDescriptionTest()
+        {
+            //ICourse course = new Course();
+            //course = new GroupCourseDecorator(course);
+            ICourse course = new OnlineCourseDecorator(new GroupCourseDecorator(new Course()));
+            course.BeginCourse();
+            var description = course.Description;
+            Assert.AreEqual("Online Group Language Course", description);
+        }
     }
 }

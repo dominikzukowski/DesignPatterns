@@ -15,6 +15,10 @@ namespace DesignPatterns.Decorator
             this.course = course;
         }
 
-        public abstract string GetDescription();
+        public abstract override void BeginCourse();
+
+
+        public abstract override string GetDescription();
+
     }
 }
