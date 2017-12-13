@@ -12,5 +12,18 @@ namespace DesignPatterns.LanguageSchool
         public List<string> CourseBooks = new List<string>();
         public int Price { get; set; }
         public ICourseType Type { get; set; }
+        public string Address { get; set; }
+
+        private ICourseType courseType;
+
+        public Course(ICourseType courseType = null)
+        {
+            this.courseType = courseType;
+        }
+
+        public void SetAddress()
+        {
+            Address = courseType.GetCourseAddress();
+        }
     }
 }

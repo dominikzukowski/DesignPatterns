@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Tests", "tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns", "src\DesignPatterns\DesignPatterns.csproj", "{5224DA1E-60F2-445E-AE54-54AD65CB1585}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{EF055D32-B3D7-4EC6-847B-0DC41C30FD76}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5224DA1E-60F2-445E-AE54-54AD65CB1585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5224DA1E-60F2-445E-AE54-54AD65CB1585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5224DA1E-60F2-445E-AE54-54AD65CB1585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF055D32-B3D7-4EC6-847B-0DC41C30FD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF055D32-B3D7-4EC6-847B-0DC41C30FD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF055D32-B3D7-4EC6-847B-0DC41C30FD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF055D32-B3D7-4EC6-847B-0DC41C30FD76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

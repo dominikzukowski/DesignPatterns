@@ -9,6 +9,7 @@ namespace DesignPatterns.LanguageSchool
     public interface ICourseType
     {
         void BeginCourse();
+        string GetCourseAddress();
     }
 
     public enum CourseType

@@ -14,5 +14,11 @@ namespace DesignPatterns.LanguageSchool
         {
             throw new NotImplementedException();
         }
+
+
+        public string GetCourseAddress()
+        {
+            return "http://url.com";
+        }
     }
 }
