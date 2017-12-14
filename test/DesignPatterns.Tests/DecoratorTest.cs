@@ -28,8 +28,6 @@ namespace DesignPatterns.Tests
         [TestMethod]
         public void PropertyDescriptionTest()
         {
-            //ICourse course = new Course();
-            //course = new GroupCourseDecorator(course);
             ICourse course = new OnlineCourseDecorator(new GroupCourseDecorator(new Course()));
             course.BeginCourse();
             var description = course.Description;
