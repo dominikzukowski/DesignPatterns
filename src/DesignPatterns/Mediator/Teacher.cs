@@ -17,7 +17,12 @@ namespace DesignPatterns.Mediator
 
         public void BeginTest()
         {
-            mediator.Send("test");
+            mediator.Send("Begin test");
+        }
+
+        public string GetCourseLevel()
+        {
+            return mediator.Send<string>("Course Level");
         }
     }
 }

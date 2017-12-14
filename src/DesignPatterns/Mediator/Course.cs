@@ -15,13 +15,18 @@ namespace DesignPatterns.Mediator
         public Course(Mediator mediator)
         {
             this.mediator = mediator;
-            mediator.Register("test", StartTest);
+            mediator.Register("Begin test", StartTest);
+            mediator.Register<string>("Course Level", GetCourseLevel);
         }
 
         private void StartTest()
         {
-            test = "Test trwa";
+            test = "The test is in progress.";
         }
 
+        private string GetCourseLevel()
+        {
+            return "B2";
+        }
     }
 }

@@ -17,7 +17,29 @@ namespace DesignPatterns.Tests
 
             teacher.BeginTest();
 
-            Assert.AreEqual("Test trwa", course.test);
+            Assert.AreEqual("The test is in progress.", course.test);
+        }
+
+        [TestMethod]
+        public void GetCourseLevelTest()
+        {
+            Mediator.Mediator mediator = new Mediator.Mediator();
+            Teacher teacher = new Teacher(mediator);
+            Course course = new Course(mediator);
+
+            var courseLevel = teacher.GetCourseLevel();
+
+            Assert.AreEqual("B2", courseLevel);
+        }
+
+        [TestMethod]
+        [ExpectedException(typeof(ArgumentException))]
+        public void ExceptionTest()
+        {
+            Mediator.Mediator mediator = new Mediator.Mediator();
+            
+            mediator.Register<string>("Course Level test", null);
+            mediator.Register<string>("Course Level test", null);
         }
     }
 }
