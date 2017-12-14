@@ -57,6 +57,7 @@
     <Compile Include="StrategyTest.cs" />
     <Compile Include="AbstractFactoryTest.cs" />
     <Compile Include="DecoratorTest.cs" />
+    <Compile Include="MediatorTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\DesignPatterns\DesignPatterns.csproj">

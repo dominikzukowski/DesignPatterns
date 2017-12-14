@@ -63,6 +63,9 @@
     <Compile Include="LanguageSchool\FullTimeCourse.cs" />
     <Compile Include="LanguageSchool\Student.cs" />
     <Compile Include="LanguageSchool\Teacher.cs" />
+    <Compile Include="Mediator\Course.cs" />
+    <Compile Include="Mediator\Mediator.cs" />
+    <Compile Include="Mediator\Teacher.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
