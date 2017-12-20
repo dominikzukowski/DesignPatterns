@@ -55,6 +55,7 @@
     <Compile Include="BuilderTest.cs" />
     <Compile Include="FactoryTest.cs" />
     <Compile Include="ObserverTest.cs" />
+    <Compile Include="PrototypeTest.cs" />
     <Compile Include="StrategyTest.cs" />
     <Compile Include="AbstractFactoryTest.cs" />
     <Compile Include="DecoratorTest.cs" />

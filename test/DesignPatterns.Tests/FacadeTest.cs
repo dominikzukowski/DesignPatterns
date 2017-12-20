@@ -10,14 +10,11 @@ namespace DesignPatterns.Tests
     {
 
         [TestMethod]
-        public void TestMethod1()
+        public void BeginCourseInFacade()
         {
             School schoolFacade = new School();
             schoolFacade.BeginCourse();
-            var dupa = schoolFacade.CourseStatus;
             Assert.AreEqual("Course is started.", schoolFacade.CourseStatus);
         }
-
-
     }
 }
